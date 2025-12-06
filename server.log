@@ -1,0 +1,73 @@
+
+> booking-app@0.1.0 dev
+> next dev
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/mac/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/mac/booking-app/package-lock.json
+
+   ▲ Next.js 16.0.3 (Turbopack)
+   - Local:         http://localhost:3000
+   - Network:       http://192.168.1.105:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+ ✓ Ready in 2.8s
+ ○ Compiling /signup ...
+ GET /signup 200 in 6.6s (compile: 6.1s, render: 580ms)
+[31m[auth][error][0m UnknownAction: Cannot parse action at /api/auth/signup. Read more at https://errors.authjs.dev#unknownaction
+    at parseActionAndProviderId (/Users/mac/booking-app/.next/dev/server/chunks/16441_@auth_core_dddf83bb._.js:1177:220)
+    at toInternalRequest (/Users/mac/booking-app/.next/dev/server/chunks/16441_@auth_core_dddf83bb._.js:1115:40)
+    at Auth (/Users/mac/booking-app/.next/dev/server/chunks/16441_@auth_core_dddf83bb._.js:5325:230)
+    at httpHandler (/Users/mac/booking-app/.next/dev/server/chunks/16441_410199a6._.js:4342:216)
+    at AsyncLocalStorage.run (node:async_hooks:335:14)
+    at AppRouteRouteModule.do (/Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:37868)
+    at /Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:47830
+    at /Users/mac/booking-app/node_modules/next/dist/server/lib/trace/tracer.js:185:36
+    at NoopContextManager.with (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /Users/mac/booking-app/node_modules/next/dist/server/lib/trace/tracer.js:154:103
+    at NoopContextManager.with (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NextTracerImpl.trace (/Users/mac/booking-app/node_modules/next/dist/server/lib/trace/tracer.js:154:28)
+    at /Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:47669
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at /Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45164
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at /Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45121
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at AppRouteRouteModule.handle (/Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45075)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ POST /api/auth/signup 400 in 3.0s (compile: 3.0s, render: 38ms)
+[31m[auth][error][0m UnknownAction: Cannot parse action at /api/auth/signup. Read more at https://errors.authjs.dev#unknownaction
+    at parseActionAndProviderId (/Users/mac/booking-app/.next/dev/server/chunks/16441_@auth_core_dddf83bb._.js:1177:220)
+    at toInternalRequest (/Users/mac/booking-app/.next/dev/server/chunks/16441_@auth_core_dddf83bb._.js:1115:40)
+    at Auth (/Users/mac/booking-app/.next/dev/server/chunks/16441_@auth_core_dddf83bb._.js:5325:230)
+    at httpHandler (/Users/mac/booking-app/.next/dev/server/chunks/16441_410199a6._.js:4342:216)
+    at AsyncLocalStorage.run (node:async_hooks:335:14)
+    at AppRouteRouteModule.do (/Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:37868)
+    at /Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:47830
+    at /Users/mac/booking-app/node_modules/next/dist/server/lib/trace/tracer.js:185:36
+    at NoopContextManager.with (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /Users/mac/booking-app/node_modules/next/dist/server/lib/trace/tracer.js:154:103
+    at NoopContextManager.with (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/Users/mac/booking-app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NextTracerImpl.trace (/Users/mac/booking-app/node_modules/next/dist/server/lib/trace/tracer.js:154:28)
+    at /Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:47669
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at /Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45164
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at /Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45121
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at AppRouteRouteModule.handle (/Users/mac/booking-app/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45075)
+ POST /api/auth/signup 400 in 26ms (compile: 10ms, render: 15ms)
+ GET /signup 200 in 303ms (compile: 10ms, render: 293ms)

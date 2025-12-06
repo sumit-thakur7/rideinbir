@@ -1,0 +1,39 @@
+{
+  "name": "booking-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "framer-motion": "^12.23.25",
+    "lucide-react": "^0.554.0",
+    "mongoose": "^8.20.1",
+    "next": "16.0.3",
+    "next-auth": "^4.24.7",
+    "nodemailer": "^7.0.10",
+    "razorpay": "^2.9.6",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/aos": "^3.0.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "@types/nodemailer": "^7.0.4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.3",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

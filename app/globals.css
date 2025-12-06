@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 220 38 38; /* Red */
+    --color-secondary: 0 0 0; /* Black */
+    --color-accent: 234 179 8; /* Yellow */
+    --color-white: 255 255 255;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg transition-all;
+  }
+  
+  .btn-secondary {
+    @apply bg-black hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg transition-all;
+  }
+  
+  .btn-accent {
+    @apply bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg transition-all;
+  }
+}
